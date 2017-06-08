@@ -9,12 +9,12 @@ import org.junit.Test;
  */
 public class CalculateTest {
 	
-	Calculate calculation = new Calculate();
-	int sum = calculation.sum(2,5);
-	int testSum = 7;
-	
-	int subtract = calculation.subtract(10, 9);
-	int testSubtract = 1;
+//	Calculate calculation = new Calculate();
+//	int sum = calculation.sum(2,5);
+//	int testSum = 7;
+//	
+//	int subtract = calculation.subtract(10, 9);
+//	int testSubtract = 1;
 	
 	
 	/**
@@ -26,9 +26,14 @@ public class CalculateTest {
 	 */
 	@Test
 	public void testSum(){
+		
+		Calculate calculation = new Calculate();
+		int sum = calculation.sum(2,5);
+		int testSum = 7;
 		System.out.println();
 		System.out.println("@Test sum: " + sum + "=" + testSum);
 		assertEquals(sum, testSum);
+		
 	}
 	
 	/**
@@ -36,9 +41,14 @@ public class CalculateTest {
 	 */
 	@Test
 	public void testSubtract(){
+		
+		Calculate calculation = new Calculate();
+		int subtract = calculation.subtract(10, 9);
+		int testSubtract = 1;
 		System.out.println();
 		System.out.println("@Test subtract:" + subtract + "=" + testSubtract);
 		assertEquals(subtract, testSubtract);
+		
 	}
 	
 }
